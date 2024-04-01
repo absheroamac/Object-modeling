@@ -35,3 +35,62 @@ so final list of entities are
 # Show
 # Ticket
 # Seat
+
+Step 3 - Identifying Use Cases.
+------------------------
+
+checklist to identify useCases.
+-> Identify the actors who interact from outside of the system.
+-> Identify What they do with the system
+-> Apply CRUD Technique
+
+Identifying Actors
+# User
+# system
+
+Identifying what
+# User book a movie ticket 
+ - User Browse through system
+ - Request for available shows
+ - Book ticket.
+
+Apply CRUD
+# cinema C-> Add new Cinema
+         R-> Get avialble cinemas at location
+         U-> update screens and movies at cinemas
+         D-> Remove cinema
+# Screen C -> Add new Screen to Cinema
+         R -> Get available screens at Cinema
+         U -> Update screens with shows
+         D -> Remove Screen
+# Movie  C -> Add new Movie to the system
+         R -> Get available movies from across multiple cinemas
+         U -> Update movies
+         D -> Remove Movie
+# User   C -> Add new User
+         R -> get user Details
+         U -> update User
+         D -> remove user
+# Show   C -> Add new show
+         R -> Get all available shows
+         U -> update shows
+         D -> remove show
+# Ticket C -> create new Ticket
+         R -> Get booked Ticket
+         U -> Update ticket with booking
+         D -> Cancel Ticket
+
+
+Summary
+# User
+- User Browse Cinemas
+- User Browse shows
+- User Browse seats at perticular show
+- User Book ticket
+- User cancel ticket
+
+# System
+- System Add Cinemas
+- System Add Screens
+- System Add Movies
+- System Add Shows
