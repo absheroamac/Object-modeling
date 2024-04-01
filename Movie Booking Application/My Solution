@@ -1,0 +1,37 @@
+Step 1 - Understanding the problem.
+------------------------
+
+This is a requirement for online movie ticket Booking platform. 
+# There are lot Cinemas in the city
+# Cinemas can have multiple screens
+# Screens are uiniquly identified with Alphabets ( increasing order )
+# Each screen can play one movie at a time slot
+# Any movie can be play in multiple screens and slots within different Cinemas.
+
+# User should able to browse through the list of movies and shows available to Book
+# User can request to display seats along with availability status of a screen for a particular show.
+# They should able to choose show for a perticular movie at perticular cinema.
+
+Step 2 - Identifying Entities.
+------------------------
+
+Initial Identification of nouns.
+# Cinema
+# city
+# screen
+# movie
+# time slot
+# user
+# show
+# seat
+
+City and Time slot can be placed as values so those can be negligible. Also th ticket entity is very much important to save the details including show, user Details, booking details etc.
+so final list of entities are
+
+# Cinema
+# Screen
+# Movie
+# User
+# Show
+# Ticket
+# Seat
