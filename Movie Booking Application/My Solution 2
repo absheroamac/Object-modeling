@@ -1,0 +1,24 @@
+Step 4 - Identify entities for Data Store
+------------------------
+
+# User Info 
+# Ticket info for validation and to check seats
+# Details of Cinemas and their Screens
+# Movie Details
+# Show Details
+
+Step 5 - Let's Identify Relationships.
+------------------------
+
+Cinema <composition>- Screen (if Cinema is distroyed screen also Distroyed) {one - many}
+Screen <Composition>- Seat (if screen discontinued seat also will not be available) {one - many}
+Show <Aggregation>- Cinema (Cinema can exist if there is no show) {many - one}
+Show <Aggregation>- Screen {many - one}
+Show <composition>- Seat (free seat will not be available if there is no show) {one-many}
+Show <Aggregation>- Movie (Movie can exist without show) {many-one}
+Ticket <Aggregation>- Show {one-many}
+Ticket <Aggregation>- User {one-one}
+Ticket <Aggregation>- Seat {one-many}
+
+
+
