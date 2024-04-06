@@ -1,0 +1,66 @@
+Step-1 Understanding the Problem
+------------------------
+
+# Its basically a Libreary Management System
+# User can search, borrow and return books.
+# User can only keep the book for specific duration.
+# There can be multiple copies of books
+# The system support multiple librarys with their own users and inventory.
+# There is a limit for borrowing books
+
+Step-2 Identify Entities
+------------------------
+
+# Library -> details of the library including details about the users and 
+# Book -> Keep Book Details with id
+# User -> User Details with id
+# Transaction -> Borrowing,Returning and Renewing details
+# Duration -> Time period includes start time and end time.
+
+Step-3 Identifying Use Cases
+------------------------
+
+Actors interacting with the system
+# User
+# Librarian
+
+Identifying what they do with the system
+- user browse books
+- user borrow, and return books
+- librarian add,remove books from library
+
+Apply CRUD
+# Library     C-> Add new Library
+              R-> Get available Librarys
+              U-> Update Library
+              D-> Remove Library from the system
+# Book        C-> Add new Book
+              R-> Get all books
+              U-> Update book when borrowing and returning
+              D-> Remove book from library
+# User        C-> Add new user
+              R-> Get details about user and their borrowings
+              U-> Update user Details for transactions
+              D-> Remove User from the System
+# Transaction C-> Create new transaction
+              R-> Get all transactions
+              U-> Update Transaction
+              D-> Delete Transaction
+# Duration    C-> Create Duration
+              R-> Get Duration
+              U-> Update start or end time
+              D-> null
+
+
+Summary
+# User
+- User Browse available books
+- User Borrow Book for a period
+- User Return Borrowed Book
+- User Renew Borrowed Book
+
+# Librarian
+- Librarian Add Book
+- Librarian Remove Book
+
+
